@@ -9,15 +9,23 @@ interface IProps {
 const Div = styled.div`
     .menu{
         background-color: var(--Brand-Color-1);
-        padding: 45px;
+        min-width: 250px;
         nav{
+            padding: 45px 0;
             color: var(--Brand-Color-2);
+            position: relative;
+            height: 100%;
+            > div{
+                position: absolute;
+                bottom: 0;
+            }
             a{
                 display: block;
                 cursor: pointer;
-                margin-bottom: 20px;
+                margin-bottom: 30px;
                 text-decoration: none;
-                color: var(--Brand-Color-2)
+                color: var(--Brand-Color-2);
+                padding: 0 50px;
             }
         }
     }
@@ -25,8 +33,10 @@ const Div = styled.div`
         display: grid;
         grid-template-columns: auto 1fr;
         height: calc( 100vh - 101px );
-        > div{
-            padding: 25px 50px;
+        overflow: hidden;
+        > div:last-child{
+            padding: 30px 50px;
+            overflow-y: scroll;
         }
     }
 `

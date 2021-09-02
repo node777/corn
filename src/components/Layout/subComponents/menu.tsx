@@ -52,11 +52,17 @@ const menuItemsList:TmenuItemsList[]=[
 ]
 
 const Nav = styled.nav`
-    img{
-        width: 25px;
+    a{
+        img{
+            width: 25px;
+        }
+        h6{
+            margin: 0 10px;
+        }
     }
-    h6{
-        margin: 0 10px;
+    .social-icons-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 `
 
@@ -77,6 +83,16 @@ const Menu = () => {
                     </Link>
                 )
             })}
+            <Grid container justify='space-between' alignItems='center'>
+                <Grid item xs={7}>
+                    <img src={`${process.env.PUBLIC_URL}/assets/images/menu/whiteCircle.svg`} alt='profile'/>
+                    <span>1.43$</span>
+                </Grid>
+                <Grid item xs={4} className='social-icons-wrap'>
+                    <img src={`${process.env.PUBLIC_URL}/assets/images/menu/twitter.svg`} alt='profile'/>
+                    <img src={`${process.env.PUBLIC_URL}/assets/images/menu/telegram.svg`} alt='icon'/>
+                </Grid>
+            </Grid>
         </Nav>
     )
 }

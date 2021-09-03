@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Grid } from "@material-ui/core";
 import styled from "styled-components";
 import Layout from "../../components/Layout";
@@ -109,6 +110,14 @@ const Pools = () => {
             </Layout>
         </Div>
     )
+=======
+import React from 'react';
+
+const Pools: React.FC = () => {
+  return(
+    <div>hi</div>
+  )
+>>>>>>> develop
 }
 
 export default Pools;

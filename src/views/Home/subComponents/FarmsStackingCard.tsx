@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import Card from '../../../components/card';
 
 const CardWrapper = styled.div`
   .head{
@@ -14,9 +15,6 @@ const CardWrapper = styled.div`
         border-radius: 50%;
     }
   }
-  background-color: var(--Brand-Color-1);
-  padding: 24px;
-  border-radius: var(--radius-1);
     h2{
         font-size: 24px;
         color: var(--Brand-Color-2);
@@ -77,33 +75,35 @@ const CardWrapper = styled.div`
 const FarmsStackingCard: React.FC = () => {
     return(
         <CardWrapper>
-            <div>
-                <div className='head'>
-                    <div>
-                        <h2>Farms & Staking</h2>
-                        <span>
-                            <img src={`${process.env.PUBLIC_URL}/assets//images/home/corn.svg`} className='cornImg' alt='corn'/>
-                        </span>
-                    </div>
-                    <img src={`${process.env.PUBLIC_URL}/assets//images/home/info.svg`} alt='info'/>
-                </div>
-                <div className='flexWrapper'>
-                    <div>
-                        <div id='harvest'>
-                            <h6>CORN to harvest</h6>
-                            <h4 data-CORN_to_harvest='11.000' className='cornsCount'>11.000</h4>
-                            <h6 data-Money_to_collect='~ $10.00' className='moneyCollect'>~ $10.00</h6>
+            <Card>
+                <div>
+                    <div className='head'>
+                        <div>
+                            <h2>Farms & Staking</h2>
+                            <span>
+                                <img src={`${process.env.PUBLIC_URL}/assets//images/home/corn.svg`} className='cornImg' alt='corn'/>
+                            </span>
                         </div>
-                        <div id='wallet'>
-                            <h6>CORN in Wallet</h6>
-                            <h4 data-CORN_to_harvest='11.000' className='cornsCount'>11.000</h4>
-                            <h6 data-Money_to_collect='~ $10.00' className='moneyCollect'>~ $10.00</h6>
-                        </div>
+                        <img src={`${process.env.PUBLIC_URL}/assets//images/home/info.svg`} alt='info'/>
                     </div>
-                    <button type='button'>Add to MM</button>
+                    <div className='flexWrapper'>
+                        <div>
+                            <div id='harvest'>
+                                <h6>CORN to harvest</h6>
+                                <h4 data-CORN_to_harvest='11.000' className='cornsCount'>11.000</h4>
+                                <h6 data-Money_to_collect='~ $10.00' className='moneyCollect'>~ $10.00</h6>
+                            </div>
+                            <div id='wallet'>
+                                <h6>CORN in Wallet</h6>
+                                <h4 data-CORN_to_harvest='11.000' className='cornsCount'>11.000</h4>
+                                <h6 data-Money_to_collect='~ $10.00' className='moneyCollect'>~ $10.00</h6>
+                            </div>
+                        </div>
+                        <button type='button'>Add to MM</button>
+                    </div>
+                    <button type='button' className='harvestBtn'>Harvest(1)</button>
                 </div>
-                <button type='button' className='harvestBtn'>Harvest(1)</button>
-            </div>
+            </Card>
         </CardWrapper>
     )
 }

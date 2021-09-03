@@ -49,7 +49,7 @@ const Layout: React.FC<IProps> = ({children}) =>{
                 <div className='menu'>
                     <Menu />
                 </div>
-                <div >
+                <div>
                     {children}
                 </div>
             </div>

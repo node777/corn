@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components'
+import Card from '../../../components/card';
 
 const CardWrapper = styled.div`
   .head{
@@ -12,9 +13,6 @@ const CardWrapper = styled.div`
         margin-bottom: 35px;
     }
    }
-   background-color: var(--Brand-Color-1);
-   padding: 24px;
-   border-radius: var(--radius-1);
    .feed{
        text-align: center;
    }
@@ -23,15 +21,17 @@ const CardWrapper = styled.div`
 const TwitterFeedCard: React.FC = () => {
     return(
         <CardWrapper>
-            <div>
-                <div className='head'>
-                    <h2>Announcements</h2>
-                    <img src={`${process.env.PUBLIC_URL}/assets/images/home/info.svg`} alt='info'/>
+            <Card>
+                <div>
+                    <div className='head'>
+                        <h2>Announcements</h2>
+                        <img src={`${process.env.PUBLIC_URL}/assets/images/home/info.svg`} alt='info'/>
+                    </div>
+                    <div className='feed'>
+                        <img src={`${process.env.PUBLIC_URL}/assets//images/home/feed.svg`} alt='info'/>
+                    </div>
                 </div>
-                <div className='feed'>
-                    <img src={`${process.env.PUBLIC_URL}/assets//images/home/feed.svg`} alt='info'/>
-                </div>
-            </div>
+            </Card>
         </CardWrapper>
     )
 }

@@ -86,7 +86,7 @@ const Pools = () => {
         <Div>
             <Layout>
                 <h1 className='page-title'>Pools</h1>
-                <Grid container justify='space-between' spacing={2}>
+                <Grid container justifyContent='space-between' spacing={2}>
                     <Grid item xs={12} md={6} lg={4} className='card-wrapper'>
                         <SingleCard />
                     </Grid>

@@ -9,7 +9,7 @@ const SingleCard = () => {
     
     return(
         <Card>
-            <Grid container justify='space-between' alignItems='center'>
+            <Grid container justifyContent='space-between' alignItems='center'>
                 <Grid item>
                     <img src={`${process.env.PUBLIC_URL}/assets/images/farms/whiteCircle.svg`} alt="img"/>
                 </Grid>
@@ -18,7 +18,7 @@ const SingleCard = () => {
                     <h3>CAKE-BNB</h3>
                 </Grid>
             </Grid>
-            <Grid container justify='space-between' alignItems='center'>
+            <Grid container justifyContent='space-between' alignItems='center'>
                 <Grid item>
                     APR:
                 </Grid>
@@ -26,7 +26,7 @@ const SingleCard = () => {
                     37.5%
                 </Grid>
             </Grid>
-            <Grid container justify='space-between' alignItems='center'>
+            <Grid container justifyContent='space-between' alignItems='center'>
                 <Grid item>
                     Earn:
                 </Grid>
@@ -34,7 +34,7 @@ const SingleCard = () => {
                     TOKEN
                 </Grid>
             </Grid>
-            <Grid container justify='space-between' alignItems='center'>
+            <Grid container justifyContent='space-between' alignItems='center'>
                 <Grid item>
                     <div>
                         <div>SHOPX Earned</div>
@@ -72,7 +72,7 @@ const SingleCard = () => {
                 {
                     isExpanded ?
                         <>
-                            <Grid container justify='space-between' alignItems='center'>
+                            <Grid container justifyContent='space-between' alignItems='center'>
                                 <Grid item>
                                     Your Initial Deposit:
                                 </Grid>
@@ -80,7 +80,7 @@ const SingleCard = () => {
                                     $900,518,022
                                 </Grid>
                             </Grid>
-                            <Grid container justify='space-between' alignItems='center'>
+                            <Grid container justifyContent='space-between' alignItems='center'>
                                 <Grid item>
                                 Total Liquidity:
                                 </Grid>

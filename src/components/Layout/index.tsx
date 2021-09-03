@@ -19,13 +19,16 @@ const Div = styled.div`
                 position: absolute;
                 bottom: 0;
             }
-            a{
-                display: block;
-                cursor: pointer;
-                margin-bottom: 30px;
-                text-decoration: none;
-                color: var(--Brand-Color-2);
-                padding: 0 50px;
+            .item-wrapper{
+                list-style: none;
+                a{
+                    display: block;
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: var(--Brand-Color-2);
+                    padding: 0 35px;
+                    margin-bottom: 30px;
+                }
             }
         }
     }

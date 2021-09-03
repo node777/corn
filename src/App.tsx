@@ -5,6 +5,7 @@ import './styles/_styles.scss'
 
 const Home = lazy(() => import('./views/Home'))
 const Farms = lazy(() => import('./views/Farms'))
+const Pools = lazy(() => import('./views/Pools'))
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/"><Home /></Route>
           <Route path="/home"><Home /></Route>
           <Route path="/farms"><Farms /></Route>
+          <Route path="/pools"><Pools /></Route>
         </Switch>
       </Suspense>
     </div>
